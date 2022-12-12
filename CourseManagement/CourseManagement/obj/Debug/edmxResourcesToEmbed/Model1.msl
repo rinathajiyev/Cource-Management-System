@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="course_managementModelStoreContainer" CdmEntityContainer="course_managementEntities">
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="course_managementModel.courses">
+        <MappingFragment StoreEntitySet="courses">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="management">
+      <EntityTypeMapping TypeName="course_managementModel.management">
+        <MappingFragment StoreEntitySet="management">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="student_name" ColumnName="student_name" />
+          <ScalarProperty Name="teacher_name" ColumnName="teacher_name" />
+          <ScalarProperty Name="course" ColumnName="course" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="finish_time" ColumnName="finish_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="students">
+      <EntityTypeMapping TypeName="course_managementModel.students">
+        <MappingFragment StoreEntitySet="students">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teachers">
+      <EntityTypeMapping TypeName="course_managementModel.teachers">
+        <MappingFragment StoreEntitySet="teachers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
